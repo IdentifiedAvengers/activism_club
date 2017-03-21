@@ -1,24 +1,5 @@
-# README
+# Activism Club
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Activism Club is a site that connects people with similar interests in activism in order to promote action.
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+The primary goal of Activism Club is to convert a desire to improve society into real-world action as quickly as possible.
