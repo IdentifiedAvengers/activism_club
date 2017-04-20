@@ -8,6 +8,7 @@ end
 gem 'rails', '~> 5.0.2'
 
 gem 'coffee-rails', '~> 4.2'
+gem 'devise'
 gem 'jbuilder', '~> 2.5'
 gem 'jquery-rails'
 gem 'puma', '~> 3.0'
