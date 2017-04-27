@@ -4,8 +4,6 @@ Rails.application.routes.draw do
 
   devise_for :users
 
-  scope defaults: { format: :json } do
-    resources :projects, format: :json
-  end
+  resources :projects
 
 end

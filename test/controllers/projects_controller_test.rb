@@ -18,10 +18,10 @@ class ProjectsControllerTest < ActionDispatch::IntegrationTest
   test "should create project" do
     category = project_categories(:one)
     assert_difference('Project.count') do
-      post projects_url, params: { project: { name: 'test', category_id: category.id } }, as: :json
+      post projects_url, params: { project: { name: 'test', category_id: category.id } }
     end
 
-    assert_response :created
+    assert_response :found
   end
 
   test "should show project" do
@@ -35,8 +35,8 @@ class ProjectsControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should update project" do
-    patch project_url(@project), params: { project: { description: 'test' } }, as: :json
-    assert_response :success
+    patch project_url(@project), params: { project: { description: 'test' } }
+    assert_response :found
   end
 
   test "should destroy project" do
@@ -44,6 +44,6 @@ class ProjectsControllerTest < ActionDispatch::IntegrationTest
       delete project_url(@project)
     end
 
-    assert_response :no_content
+    assert_response :found
   end
 end
