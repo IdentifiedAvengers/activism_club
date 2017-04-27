@@ -8,5 +8,18 @@
         - project.errors.full_messages.each do |message|
           li
             = message
+  = field_set_tag 'Project Details' do
+    dl
+      dt= f.label :name, 'Name'
+      dd= f.text_field :name
+    dl
+      dt= f.label :description, 'Description'
+      dd= f.text_area :description
+    dl
+      dt= f.label :category_id, 'Category'
+      dd= f.collection_select :category_id, @categories, :id, :name
+
+
+
   .actions
     = f.submit
