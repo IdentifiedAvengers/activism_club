@@ -5,3 +5,10 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+categories = Project::Category.create([
+                                        {name: 'volunteer', description: 'blah'},
+                                        {name: 'coding', description: 'blah'},
+                                        {name: 'mnuscles', description: 'blah'}
+                                      ])
+

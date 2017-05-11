@@ -1,0 +1,22 @@
+p#notice
+  = notice
+h1
+  | Projects
+table
+  thead
+    tr
+      th Project Name
+      th Description
+      th Category
+      th Actions
+  tbody
+    - @projects.each do |project|
+      tr
+        td= link_to project.name, project
+        td= project.description
+        td= project.category_name
+        td
+          = link_to 'Edit', edit_project_path(project)
+          = link_to 'Destroy', project, method: :delete, data: { confirm: 'Are you sure?' }
+br
+= link_to 'New Project', new_project_path
